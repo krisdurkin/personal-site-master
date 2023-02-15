@@ -21,13 +21,15 @@ layout: 'base.njk'
         <div class="container" data-container-height="standard">
             <div class="content-wrapper">
                 <div class="work-grid">
-                        {%- for work in collections.work -%}
-                        <div class="work-grid-item">
+                        {%- for work in collections.work | reverse -%}
+                        <a href="{{ post.url }}">
+                            <div class="work-grid-item">
                                 <img class="pl-image" src="{{ work.data.image }}" alt="{{ work.data.imageAlt }}">
                                 <div class="work-grid-content">
                                     <p>{{ work.data.title }}</p>
                                 </div>
                             </div>
+                            </a>
                         {%- endfor -%}
                     </div>
                 </div>
