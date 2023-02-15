@@ -20,7 +20,7 @@ layout: 'base.njk'
     <section>
         <div class="container" data-container-height="standard">
             <div class="content-wrapper">
-                <div class="work-grid">
+                <div id="cards" class="work-grid">
                         {%- for work in collections.work | reverse -%}
                         <a href="{{ work.url }}">
                             <div class="work-grid-item">

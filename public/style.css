@@ -118,6 +118,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -448,6 +449,30 @@ li:not(:last-child) {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
+.work-grid-item{
+  position: relative;
+}
+.work-grid-item:hover::after{
+  opacity: 1;
+}
+.work-grid-item:after {
+  background: radial-gradient(
+    1200px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.055),
+    transparent 40%
+  );
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition-duration: 500ms;
+}
+
 .pl-image{
   background: grey;
   width: 100%;
@@ -462,4 +487,5 @@ li:not(:last-child) {
   border-radius: 0px 0px 10px 10px;
   border: 1px rgb(56, 56, 56) solid;
   padding: 1rem;
+  color: white;
 }
