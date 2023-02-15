@@ -15,7 +15,7 @@
     <!-- External -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></noscript>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
                     <p class="animate__animated animate__fadeInUp">I'm a web designer who currently works at Fab Spider,
                         designing websites for clients across a
                         multitude of business sectors, from travel, to agriculture, and everything inbetween.</p>
-                    <a href="about.html"><button class="button animate__animated animate__fadeInUp animate__delay-1s"
+                    <a href="/about/"><button class="button animate__animated animate__fadeInUp animate__delay-1s"
                     data-button-type="primary">More about me</button></a>
                     <button class="button animate__animated animate__fadeInUp animate__delay-1s"
                     data-button-type="secondary"><span class="button-label">My Work</span></button>
@@ -59,15 +59,15 @@
         </section>
     </main>
 <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
