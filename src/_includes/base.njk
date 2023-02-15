@@ -21,7 +21,6 @@
 <body>
 {% include 'header.njk' %}
 {{ content | safe }}
-
 <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
@@ -33,6 +32,5 @@
       });
     }
   </script>
-
 </body>
 </html>
