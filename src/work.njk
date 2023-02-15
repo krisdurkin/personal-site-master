@@ -22,7 +22,7 @@ layout: 'base.njk'
             <div class="content-wrapper">
                 <div class="work-grid">
                         {%- for work in collections.work | reverse -%}
-                        <a href="{{ post.url }}">
+                        <a href="{{ work.url }}">
                             <div class="work-grid-item">
                                 <img class="pl-image" src="{{ work.data.image }}" alt="{{ work.data.imageAlt }}">
                                 <div class="work-grid-content">
