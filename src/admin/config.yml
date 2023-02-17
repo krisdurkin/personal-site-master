@@ -1,15 +1,18 @@
 backend:
   name: git-gateway
   branch: master
+
 media_folder: "public/media"
 public_folder: "/media"
+
 collections:
   - name: "work" # Used in routes, e.g., /admin/collections/blog
     label: "Work" # Used in the UI
     folder: "src/work" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
       - {label: "Project Title", name: "project_title", widget: "string"}
-      - {label: "Project Description", name: "project_description", widget: "text"}
-      - {label: "Featured Image", name: "featured_image", widget: "image"}
