@@ -13,4 +13,4 @@ collections:
       - {label: "Project Title", name: "project_title", widget: "string"}
       - {label: "Project Description", name: "project_description", widget: "text"}
       - {label: "Featured Image", name: "featured_image", widget: "image"}
-      - {label: "Project Highlights", name: "project_highlights", widget: "list", summary: '{{fields.image}}', field: {label: Image, name: hightlight_image, widget: image}}
+      - {label: "Project Highlights", name: "project_highlights", widget: "list", summary: '{{fields.image}}', field: {label: Image, name: hightlight_image, widget: image}, field: {label: Description, name: hightlight_description, widget: text}}
