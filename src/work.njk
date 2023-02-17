@@ -24,9 +24,9 @@ layout: 'base.njk'
                         {%- for work in collections.work | reverse -%}
                         <a href="{{ work.url }}">
                             <div class="work-grid-item">
-                                <img class="pl-image" src="{{ work.data.image }}" alt="{{ work.data.imageAlt }}">
+                                <img class="pl-image" src="{{ work.data.feautred_image }}" alt="{{ work.data.project_title }}">
                                 <div class="work-grid-content">
-                                    <p>{{ work.data.title }}</p>
+                                    <p>{{ work.data.project_title }}</p>
                                 </div>
                             </div>
                             </a>
