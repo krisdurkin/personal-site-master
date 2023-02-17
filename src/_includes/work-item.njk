@@ -11,7 +11,7 @@ layout: 'base.njk'
                     
                     {% if project_highlights %}
                         {% for highlight in project_highlights %}
-                            <img src="{{ highlight.hightlight_image }}" alt="Highlight Image">
+                            <img class="lightbox" data-fancybox src="{{ highlight.hightlight_image }}" alt="Highlight Image">
                             <p>{{ highlight.highlight_description }}</p>
                         {% endfor %}
                     {% endif %}
