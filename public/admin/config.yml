@@ -15,4 +15,6 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - {label: "Project Title", name: "project_title", widget: "string"}
+      - label: "Project Ttitle"
+        name: "project_title"
+        widget: "string"
