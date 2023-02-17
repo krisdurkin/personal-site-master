@@ -12,9 +12,12 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
       - label: "Project Ttitle"
         name: "project_title"
         widget: "string"
+      - label: "Project Description"
+        name: "project_description"
+        widget: "text"
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
