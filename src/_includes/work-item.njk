@@ -6,8 +6,15 @@ layout: 'base.njk'
         <div class="container" data-container-height="standard">
             <div class="content-wrapper">
                 <div class="flow">
-                    <h1 class="animate__animated animate__fadeInUp">{{ title }}</h1>
-                    <p class="animate__animated animate__fadeInUp">{{ description }}</p>
+                    <h1>{{ project_title }}</h1>
+                    <p>{{ project_description }}</p>
+                    
+                    {% if project_highlights %}
+                        {% for highlight in project_highlights %}
+                            <img src="{{ highlight.hightlight_image }}" alt="Highlight Image">
+                            <p>{{ highlight.highlight_description }}</p>
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         </div>
