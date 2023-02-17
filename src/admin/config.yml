@@ -21,3 +21,13 @@ collections:
       - label: "Featured Image"
         name: "featured_image"
         widget: "image"
+      - label: "Project Highlights"
+        name: "project_highlights"
+        widget: "list"
+        fields:
+          - label: "String"
+            name: "string"
+            widget: "string"
+          - label: "Image"
+            name: "image"
+            widget: "image"
