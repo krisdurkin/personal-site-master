@@ -14,8 +14,3 @@ collections:
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Image Alt", name: "imageAlt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Gallery"
-        name: "galleryImages"
-        widget: "list"
-        summary: '{{fields.image}}'
-        field: {label: Image, name: image, widget: image}}
