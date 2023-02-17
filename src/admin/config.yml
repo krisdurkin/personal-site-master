@@ -10,8 +10,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Image Alt", name: "imageAlt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Gallery", name: "galleryImages", widget: "list", summary: '{{fields.image}}', field: {label: gImage, name: gimage, widget: image}}
+      - {label: "Project Title", name: "project_title", widget: "string"}
+      - {label: "Project Description", name: "project_description", widget: "text"}
+      - {label: "Featured Image", name: "featured_image", widget: "image", allow_multiple: "false", choose_url: "false"}
+      - {label: "Project Highlights", name: "project_highlights", widget: "list", summary: '{{fields.image}}', field: {label: Image, name: hightlight_image, widget: image}, field: {label: Description, name: hightlight_description, widget: text}}
