@@ -24,6 +24,7 @@ collections:
       - label: "Project Highlights"
         name: "project_highlights"
         widget: "list"
+        summary: "Project Highlight"
         fields:
           - label: "Hightlight Image"
             name: "hightlight_image"
