@@ -4,18 +4,25 @@ layout: 'base.njk'
 <main>
     <section>
         <div class="container" data-container-height="standard">
-            <div class="content-wrapper">
+            <div class="content-wrapper" data-content-width="half">
                 <div class="flow">
-                    <h1>{{ project_title }}</h1>
-                    <p>{{ project_description }}</p>
-                    
-                    {% if project_highlights %}
+                    <h1 class="animate__animated animate__fadeInUp">{{ project_title }}</h1>
+                    <p class="animate__animated animate__fadeInUp">{{ project_description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container" data-container-height="standard">
+            <div class="content-wrapper">
+                {% if project_highlights %}
                         {% for highlight in project_highlights %}
+                            <div class="project-highlight flow">
                             <img class="lightbox" data-fancybox src="{{ highlight.hightlight_image }}" alt="Highlight Image">
                             <p>{{ highlight.highlight_description }}</p>
+                        </div>
                         {% endfor %}
                     {% endif %}
-                </div>
             </div>
         </div>
     </section>
