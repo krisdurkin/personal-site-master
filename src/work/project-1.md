@@ -8,9 +8,14 @@ project_description: Aspect Granite & Quartz is a newly started company that
 featured_image: /media/aspect-granite-quartz.jpg
 project_highlights:
   - hightlight_image: /media/aspect-homepage.jpg
-    highlight_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Nunc fermentum egestas ligula, eu pulvinar urna suscipit non. Quisque ut
-      justo sit amet nunc sollicitudin faucibus ac vel lectus. Nullam dictum
-      aliquet turpis nec ornare. Nam tincidunt ut ante ac vehicula. Vestibulum
-      sit amet maximus nulla, nec cursus nulla.
+    highlight_description: >-
+      Goals:
+
+      - Create a modern, on-brand website design.
+
+      - Develop a user-friendly interface that is easy to use and navigate.
+
+      - Ensure the website is mobile-responsive and works well across all devices.
+
+      - Generate leads and allow potential buyers to see swatches and samples online.
 ---
