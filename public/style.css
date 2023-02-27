@@ -489,7 +489,6 @@ li:not(:last-child) {
   object-fit: cover;
   background: grey;
   width: 100%;
-  height: 300px;
   border-radius: 10px 10px 0px 0px;
   border: 1px rgb(56, 56, 56) solid;
   border-bottom: 0px;
