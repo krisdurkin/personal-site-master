@@ -523,6 +523,11 @@ input, textarea{
   border-radius: 10px;
   border: 1px rgba(255, 255, 255, 0.178) solid;
   background: rgba(255, 255, 255, 0.062);
+  color: white;
+}
+input:focus-visible{
+  outline: none;
+  border: 1px white solid;
 }
 p[data-paragraph-type="small"]{
   font-size: 15px;
