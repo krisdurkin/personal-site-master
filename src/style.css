@@ -387,6 +387,10 @@ h1 {
   flex-basis: 100%;
 }
 
+.v-align-c{
+  align-items: center;
+}
+
 @media (max-width: 1000px) {
   .even-cols {
     gap: 2rem;
@@ -531,4 +535,14 @@ input:focus-visible{
 }
 p[data-paragraph-type="small"]{
   font-size: 15px;
+}
+a:not([class]){
+  color: white;
+  text-decoration: underline;
+}
+.breadcrumb{
+  background: grey;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
 }
