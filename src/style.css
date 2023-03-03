@@ -540,9 +540,10 @@ a:not([class]){
   color: white;
   text-decoration: underline;
 }
-.breadcrumb{
-  background: grey;
-  width: fit-content;
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
+.breadcrumb {
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    background: rgb(96 96 96 / 25%);
+    backdrop-filter: blur(2px);
 }
