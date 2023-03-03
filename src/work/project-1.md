@@ -1,5 +1,5 @@
 ---
-project_title: Aspect Granite & Quartz
+project_title: Aspect Granite & Quartz test
 project_description: "Aspect Granite & Quartz is a newly started company that
   sources and supplies the finest Granite & Quartz. The client came to us for a
   new website design that would represent their business and generate leads. Our
